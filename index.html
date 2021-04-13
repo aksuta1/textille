@@ -20,23 +20,7 @@
   </script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $(function () {
-      $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 500,
-        values: [75, 300],
-        slide: function (event, ui) {
-          $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-        }
-      });
-      $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-        " - $" + $("#slider-range").slider("values", 1));
-    });
-  </script>
+
 </head>
 
 <body>
@@ -44,7 +28,7 @@
   <section id="header">
     <div class="first">
       <nav class="navbar navbar-expand-lg ">
-        <div class="container nav">
+        <div class="container-fluid nav">
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Контакты</a>
@@ -74,7 +58,7 @@
 
     <div class="second">
       <nav class="navbar navbar-expand-lg ">
-        <div class="container main">
+        <div class="container-fluid main">
           <div class="logo img">
             <img src="img/logo3.png">
           </div>
@@ -124,11 +108,12 @@
             </li>
           </ul>
         </div>
+      </nav>
+
     </div>
-    </nav>
     </div>
     <div class="third">
-      <div class="container last">
+      <div class="container-fluid last">
         <ul class="nav justify-content-md-between">
           <li class="nav-item">
             <a class="nav-link" href="#">Ткани</a>
@@ -152,294 +137,440 @@
     <hr style="background:#4ef003;  border:0 solid ; height:3px; margin-top:0" />
   </section>
 
-  <section id=title>
+  <section id="title">
+
     <div class="container-header">
       <div class="header-text">
         <h2 class="h-title1">TEXTILE PLACE > Ткани</h2>
         <h1 class="h-title2">Ткани</h1>
       </div>
     </div>
-    <div class="brd">
-      <div class="container filter">
-        <div class="filter-title">
-          <h5 class="f-title">Ткани</h5>
-        </div>
-        <div class="menu-wraper">
-          <ul class=menu-categories>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-            </li>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="brd">
+          <div class="container filter">
+            <div class="filter-title">
+              <h5 class="f-title">Ткани</h5>
+            </div>
+            <div class="menu-wraper">
+              <ul class=menu-categories>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Рубашечно-блузочные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Костюмно-платеные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Жаккардовые ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Пальтовые ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Курточные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Ворсовые ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Коттоновые ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Льняные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Кружевные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Подкладочные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Трикотажные ткани</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Крепдешин</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Шифон</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Органза</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Сетка</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Тафта</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Фатин</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Кожа</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Мех</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class=menu-categories-item>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Прикладные материалы</label>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
 
-            <li class="menu-categories-item">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные </label>
-                <i class="fas fa-chevron-down"></i>
+                <li class="menu-categories-item">
+                  <ul class="menu-item-inside">
+                    <li class="menu-categories-item-inside">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">дублерин</label>
+                      </div>
+                    </li>
+                    <li class="menu-categories-item-inside">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">канва</label>
+                      </div>
+                    </li>
+                    <li class="menu-categories-item-inside">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">синтепон</label>
+                      </div>
+                    </li>
+                    <li class="menu-categories-item-inside">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">слимтекс</label>
+                      </div>
+                    </li>
+                    <li class="menu-categories-item-inside">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">флизелин</label>
+                      </div>
+                    </li>
+                  </ul>
+
+                </li>
+
+              </ul>
+              <div class="brd-2">
               </div>
-              <ul class="menu-item-inside">
-                <li class="menu-categories-item-inside">
+
+              <div class="filter-title">
+                <h5 class="f-title">Состав:</h5>
+              </div>
+              <ul class=menu-categories>
+                <li class=menu-categories-item>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
+                    <label class="form-check-label" for="inlineCheckbox1">Эластан</label>
                   </div>
                 </li>
-                <li class="menu-categories-item-inside">
+                <li class=menu-categories-item>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
-                  </div>
-                </li>
-                <li class="menu-categories-item-inside">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
+                    <label class="form-check-label" for="inlineCheckbox1">Полиэстер</label>
                   </div>
                 </li>
               </ul>
-
-            </li>
-
-          </ul>
-          <div class="brd-2">
-          </div>
-
-          <div class="filter-title">
-            <h5 class="f-title">Состав:</h5>
-          </div>
-          <ul class=menu-categories>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
+              <div class="brd-2">
               </div>
-            </li>
-            <li class=menu-categories-item>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Атласные ткани</label>
+              <div class="filter-title">
+                <h5 class="f-title">Ширина</h5>
+                <div class="widht-block">
+                  <input type="text" class="textf" id="amount1" placeholder="от">
+                  <input type="text" class="textf" id="amount2" placeholder="до">
+                  <input type="submit" class="subf" value="OK">
+                  <div class="clear"></div>
+                  <div id="slider-range"></div>
+                </div>
+                <div class="form-range">
+                  <form>
+                    <input type="range" min="12" max="2175" value="12" class="slider" id="lower">
+                    <input type="range" min="12" max="2175" value="2175" class="slider" id="higher">
+                  </form>
+                </div>
               </div>
-            </li>
-          </ul>
-          <div class="brd-2">
+              <div class="brd-2">
+              </div>
+              <div class="filter-title">
+                <h5 class="f-title">Плотность (Г/М2):</h5>
+                <div class="plotnost-block">
+                  <input type="text" class="textf" id="amount1" placeholder="от">
+                  <input type="text" class="textf" id="amount2" placeholder="до">
+                  <input type="submit" class="subf" value="OK">
+                  <div class="clear"></div>
+                  <div id="slider-range"></div>
+                </div>
+                <div class="form-range">
+                  <form>
+                    <input type="range" min="12" max="2175" value="12" class="slider" id="lower">
+                    <input type="range" min="12" max="2175" value="2175" class="slider" id="higher">
+                  </form>
+                </div>
+
+              </div>
+              <div class="brd-2">
+              </div>
+              <div class="filter-title">
+                <h5 class="f-title">Цвет:</h5>
+                <div class="menu-wraper">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input color-buttons color1" type="checkbox" id="inlineCheckbox3"
+                      value="option1">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input color-buttons color2" type="checkbox" id="inlineCheckbox4"
+                      value="option2">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input color-buttons color3" type="checkbox" id="inlineCheckbox5"
+                      value="option2">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input color-buttons color4" type="checkbox" id="inlineCheckbox6"
+                      value="option2">
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input color-buttons color5" type="checkbox" id="inlineCheckbox7"
+                      value="option2">
+                  </div>
+
+                </div>
+
+                <div class="brd-2">
+                </div>
+              </div>
+              <div class="filter-title">
+                <h5 class="f-title">Цена</h5>
+                <div class="price-block">
+                  <input type="text" class="textf" id="amount1" placeholder="от">
+                  <input type="text" class="textf" id="amount2" placeholder="до">
+                  <input type="submit" class="subf" value="OK">
+                  <div class="clear"></div>
+                </div>
+                <div class="form-range">
+                  <form>
+                    <input type="range" min="12" max="2175" value="12" class="slider" id="lower">
+                    <input type="range" min="12" max="2175" value="2175" class="slider" id="higher">
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="filter-title">
-            <h5 class="f-title">Ширина</h5>
-            <div class="widht-block">
-              <input type="text" class="textf" id="amount1">
-              <input type="text" class="textf" id="amount2">
-              <input type="submit" class="subf" value="OK">
-              <div class="clear"></div>
-              <div id="slider-range"></div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="central-block">
+          <div class="central-menu">
+            <ul class="cf">
+              <li>Сортировать по:</li>
+              <li class="central-filter"> Цена</li>
+              <li class="central-filter">Рейтинг</li>
+              <li class="central-filter">Дата добавления</li>
+            </ul>
+            <div class="brd-3"></div>
+          </div>
+
+          <div class="carousel-block">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/foto.jpg" class="d-block w-100" alt="one">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/foto.jpg" class="d-block w-100" alt="two">
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
 
           </div>
-          <div class="brd-2">
+        </div>
+        <div class="container">
+          <div class="row cards">
+
+            <div class="col-md-3 card-textille first-card">
+              <div class="container favorite">
+                <div class="card-like card-like-active">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <img src="img/st.jpg" class="card-img-top" alt="satin">
+              <div class="card-body">
+                <h5 class="card-title">Атлас однотонный</h5>
+                <p class="card-text">962/2013</p>
+                <p class="card-text2">Состав: 97 % SE; 3% EA</p>
+                <div class="container">
+                  <div class="row card-price">
+                    <div class="col-md-6">
+                      <p class="card-price1">90 грн</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-price2">80 грн</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary-card">Купить</a>
+                <p class="opt"><img src="img/kub.png" class="card-img-kub" alt="satin"> Опт</p>
+
+              </div>
+            </div>
+            <div class="col-md-3 card-textille">
+              <div class="container favorite">
+                <div class="card-like card-like-active">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <img src="img/st.jpg" class="card-img-top" alt="satin">
+              <div class="card-body">
+                <h5 class="card-title">Атлас однотонный</h5>
+                <p class="card-text">962/2013</p>
+                <p class="card-text2">Состав: 97 % SE; 3% EA</p>
+                <div class="container">
+                  <div class="row card-price">
+                    <div class="col-md-6">
+                      <p class="card-price1">90 грн</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-price2">80 грн</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary-card">Купить</a>
+                <p class="opt"><img src="img/kub.png" class="card-img-kub" alt="satin"> Опт</p>
+
+              </div>
+            </div>
+            <div class="col-md-3 card-textille">
+              <div class="container favorite">
+                <div class="card-like card-like-active">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <img src="img/st.jpg" class="card-img-top" alt="satin">
+              <div class="card-body">
+                <h5 class="card-title">Атлас однотонный</h5>
+                <p class="card-text">962/2013</p>
+                <p class="card-text2">Состав: 97 % SE; 3% EA</p>
+                <div class="container">
+                  <div class="row card-price">
+                    <div class="col-md-6">
+                      <p class="card-price1">90 грн</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="card-price2">80 грн</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary-card">Купить</a>
+                <p class="opt"><img src="img/kub.png" class="card-img-kub" alt="satin"> Опт</p>
+
+              </div>
+            </div>
           </div>
-          <div class="filter-title">
-            <h5 class="f-title">Плотность (Г/М2):</h5>
-            <div class="plotnost-block">
-              <input type="text" class="textf" id="amount1">
-              <input type="text" class="textf" id="amount2">
-              <input type="submit" class="subf" value="OK">
-              <div class="clear"></div>
-              <div id="slider-range"></div>
-            </div>
+        </div>
+      </div>
+    </div>
 
 
-          </div>
-          <div class="brd-2">
-          </div>
-          <div class="filter-title">
-            <h5 class="f-title">Цвет:</h5>
-            <div class="menu-wraper">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input color-buttons color1" type="checkbox" id="inlineCheckbox3"
-                  value="option1">
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input color-buttons color2" type="checkbox" id="inlineCheckbox4"
-                  value="option2">
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input color-buttons color3" type="checkbox" id="inlineCheckbox5"
-                  value="option2">
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input color-buttons color4" type="checkbox" id="inlineCheckbox6"
-                  value="option2">
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input color-buttons color5" type="checkbox" id="inlineCheckbox7"
-                  value="option2">
-              </div>
-
-            </div>
-
-            <div class="brd-2">
-            </div>
-          </div>
-          <div class="filter-title">
-            <h5 class="f-title">Цена</h5>
-            <div class="price-block">
-              <input type="text" class="textf" id="amount1">
-              <input type="text" class="textf" id="amount2">
-              <input type="submit" class="subf" value="OK">
-              <div class="clear"></div>
-              <div id="slider-range"></div>
-            </div>
-            <div class="form-range">
-              <form>
-                <input type="range" min="12" max="2175" value="12" class="slider" id="lower">
-                <input type="range" min="12" max="2175" value="2175" class="slider" id="higher">
-              </form>
-            </div>
-            <hr style="background:hsl(101, 100%, 50%); border:0; width:327px; height:3px; margin-top:0" />
-
-
+  </section>
 
 
 
@@ -447,15 +578,10 @@
 
 </html>
 
-</div>
-
-
-</div>
-</div>
 
 
 
-</section>
+
 
 <script src="js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
