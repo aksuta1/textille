@@ -6,7 +6,6 @@
 #header {
   background-color: #595959;
 
-
 }
 
 .nav-link {
@@ -479,7 +478,7 @@
 .card-price2 {
   color: #9fbf30;
   font-size: 25px;
- 
+
 }
 
 .opt {
@@ -502,23 +501,77 @@
   text-align: center;
   font-size: 25px;
 }
- .more-text{
-   color:#000;
-   font-weight: bold;
-   text-decoration: underline  ;
-   line-height: 3px;
-   margin-left: 60px; 
 
- }
- .cnopn{
-   color:#a4a4a4;
-text-decoration: none;
- }
- .cnopn:hover{
-color: #000;
-font-weight: bold;
+.more-text {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 3px;
+  margin-left: 60px;
 
- }
- .pager{
-margin-left: 50px; 
 }
+
+.cnopn {
+  color: #a4a4a4;
+  text-decoration: none;
+}
+
+.cnopn:hover {
+  color: #000;
+  font-weight: bold;
+
+}
+
+.pager {
+  margin-left: 50px;
+}
+
+#subscribe{
+margin-top:80px;  
+margin-bottom:80px
+}
+ 
+.subscribe-block {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.subscribe-text {
+  position: absolute;
+  top: 35px;
+  margin-left: 40px;
+}
+.sub {
+  position: absolute;
+  top:23%;
+  right:1%;
+  width: 1100px;
+ }
+.btn-primary-sub{
+  background-color: #000;
+  color:#fff;
+  border-radius:45px;
+    width: 190px;
+    height:48px
+
+}
+.form-control{
+  background-color:#fff;
+  border:#000;
+  height:40px
+   }
+   .email{
+    }
+
+
+
+
+
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+   
