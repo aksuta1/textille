@@ -527,7 +527,7 @@
 
 #subscribe {
   margin-top: 80px;
-  margin-bottom: 80px
+  margin-bottom: 50px
 }
 
 .subscribe-block {
@@ -600,6 +600,8 @@
   background-color:#000;
   color:#fff;
   text-align: left;
+  height:240px;
+padding-top: 10px;
 
 }
 .social-link{
@@ -615,4 +617,34 @@
     background-color:#66C05D;
     color:#000
 
+}
+.footer img{
+  width:135px;
+ }
+.footer-text{
+  margin-top: 20px;
+}
+.title-footer{
+  margin-bottom: 5px;
+}
+.title-contacts{
+  line-height: 18px;
+}
+.contacts{
+  padding-left: 10px;
+}
+.contacts-menu{
+  padding-left: 20px;
+}
+.contacts-grafic{
+  line-height: 18px;
+  padding-left: 30px;
+}
+.contacts-adres{
+  line-height: 18px;
+  padding-left: 40px;
+}
+.contacts-tell{
+  line-height: 18px;
+  padding-left: 50px;
 }
