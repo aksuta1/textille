@@ -68,7 +68,6 @@
 .input-group-text {
   height: 30px;
   border-radius: 0%;
-
 }
 
 .form-control {
@@ -538,14 +537,16 @@ margin-bottom:80px
 }
 .subscribe-text {
   position: absolute;
-  top: 35px;
-  margin-left: 40px;
+  top: 30px;
+  margin-left: 50px;
 }
 .sub {
   position: absolute;
   top:23%;
   right:1%;
   width: 1100px;
+  margin-top: 53px;
+
  }
 .btn-primary-sub{
   background-color: #000;
@@ -555,23 +556,39 @@ margin-bottom:80px
     height:48px
 
 }
-.form-control{
+.form-control-sub{
   background-color:#fff;
   border:#000;
-  height:40px
+  height:40px;
+  width:100%
    }
-   .email{
-    }
-
-
-
-
-
-      position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-
-
    
+.brd-4 {
+  border: solid #9fbf30;
+  border-width: 8px 0.1px 0px 0px;
+  width: 1180px;
+  height: 0rem;
+  margin-left: 125px;
+}
+ 
+  .subscr{
+    margin-top: 93px;
+    position: absolute;
+    top:23%;
+    right:1%;
+    width: 1100px;
+  }
+  .s-title{
+     margin-top: 10px;
+  }
+  .rent{
+ text-align: left;
+ padding-left: 25px;
+
+   }
+.adress{
+  text-align: left;
+padding-left: 200px;
+   }
+   
+ 
