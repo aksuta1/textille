@@ -596,55 +596,129 @@
 }
 
 /*=============footer==========================*/
-#footer{
-  background-color:#000;
-  color:#fff;
+
+
+#footer {
+ background-color: #000;
+   color: #fff;
   text-align: left;
-  height:240px;
-padding-top: 10px;
+  height: 240px;
+  padding-top: 10px;
 
 }
-.social-link{
-    display: block;
-    width: 25px;
-    height: 25px;
-    border: 2px solid #66C05D;
-    border-radius: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding-top: 2px;
-    padding-left: 5px;
-    background-color:#66C05D;
-    color:#000
+
+.social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #9fbf30;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+ text-align: center;
+  padding-top: 2px;
+  background-color: #9fbf30;
+  color: #000;
+  margin-right: 10px;
 
 }
-.footer img{
-  width:135px;
- }
-.footer-text{
-  margin-top: 20px;
+
+.footer img {
+  width: 135px;
 }
-.title-footer{
-  margin-bottom: 5px;
+
+.catalog {
+  padding-top: 60px;
 }
-.title-contacts{
-  line-height: 18px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px 5px;
 }
-.contacts{
-  padding-left: 10px;
+
+.grid-item-title {
+  grid-column: 1;
+  grid-row: 1;
 }
-.contacts-menu{
-  padding-left: 20px;
+
+.grid-item-img {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
 }
-.contacts-grafic{
-  line-height: 18px;
+
+.grid-item-left {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 87px;
+}
+
+.grid-item-right {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 87px;
+}
+
+.grid-item-catalog {
+  text-align: left;
+  padding: 5px;
+}
+
+.grid-item-catalog .bg-white {
+  padding: 2px 23px;
+}
+
+.thumb {
+  margin-bottom: 11px;
+}
+
+.grid-title {
+  padding-top: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+}
+.grid-title,
+.grid-text,
+.grid-grafic{
+color:#9fbf30
+}
+
+.grid-title1 {
+  line-height: 20px;
+  color: #000;
+  width: 200px;
+}
+
+.grid-text {
+  width: 180px;
+}
+
+.grid-point{
+  color:#fff;
+width:150px;
+line-height: 20px;
+}
+
+.menu-footer{
   padding-left: 30px;
 }
-.contacts-adres{
-  line-height: 18px;
-  padding-left: 40px;
+.adress-footer{
+  margin-left: 10px;
+  line-height: 20px;
+
 }
-.contacts-tell{
-  line-height: 18px;
-  padding-left: 50px;
+.grafik-block{
+  width:180px;
+  margin-left: 40px;
+  line-height: 20px;
+
 }
+.social-block{
+  width:200px;
+  margin-left: 30px;
+  line-height: 20px;
+ }
+ .social{
+  }
